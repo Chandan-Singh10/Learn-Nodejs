@@ -39,7 +39,7 @@ router.get("/:taste", async (req, res) => {
   try {
     const taste = req.params.taste;
     // Validate the workType
-    if (taste === "spicy" || taste === "sweet" || taste === "creamy") {
+    if (taste === "spicy" || taste === "sweet" || taste === "shake") {
       const response = await Menu.find({ taste: taste });
       console.log("response fetched");
       res.status(200).json(response);
