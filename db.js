@@ -4,10 +4,10 @@ require('dotenv').config();
 // Define the Mongodb Connection URL
 
 // Local MongoDB Connection URL
-// const MongoURL = process.env.MONGODB_URL_LOCAL; 
+const MongoURL = process.env.MONGODB_URL_LOCAL; 
 
 // MongoDB Atlas Connection URL
-const MongoURL= process.env.MONGODB_URL;
+// const MongoURL= process.env.MONGODB_URL;
 
 // Setup MongoDB Connection
 mongoose.connect(MongoURL, {
